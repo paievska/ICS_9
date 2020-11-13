@@ -28,9 +28,6 @@ def get_dovidnik():
 
 dovidnik = get_dovidnik()
 
-for c in dovidnik:
-    print(c)
-
 
 
 
@@ -66,8 +63,29 @@ def get_statistics():
 
 statistic = get_statistics()
 
-for c in statistic:
-    print(c)
+
+def show_dovidnik(dovidnik):
+    """виводить елементи довідника на екран
+
+    Args:
+        dovidnik (list): список елементів
+    """
+
+    for c in dovidnik:
+        print("код ринка:{:3} назва ринку: {:3}"
+            .format(c[0], c[1] ))
+
+
+def show_statistic(statistic):
+    """виводить статистичі дані про ринкові ціни на екран
+
+    Args:
+        statistic (list): список даних про ринкові ціни
+    """
+    for c in statistic:
+        print("дата:{:5} код ринку:{:5} ціна за картоплю:{:5} ціна за капусту:{:5} ціна за цибулю:{:5}"
+            .format(c[0], c[1], c[2], c[3], c[4]))
+        
     
 
 
