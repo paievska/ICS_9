@@ -8,14 +8,10 @@ def get_dovidnik():
     Returns:
         dovidnik_list : список ринків
     """
-
-    from_file = [
-        "100;Бессарабський",
-        "200;Житній",
-        "300;Володимирський"
-    ]
     
-    #накопичувач ринків
+    with open('./data/dovidnik.txt') as dovidnik_file:
+        from_file = dovidnik_file.readlines()
+   
     dovidnik_list = []
 
     for line in from_file:
@@ -26,7 +22,6 @@ def get_dovidnik():
     return dovidnik_list
 
 
-dovidnik = get_dovidnik()
 
 
 
@@ -38,18 +33,8 @@ def get_statistics():
         statistics_list : список статистики данних ринків
     """
 
-    from_file = [
-        "02.11.2016;100;45;50;70",
-        "02.11.2016;200;35;30;50",
-        "02.11.2016;300;35;30;45",
-        "14.11.2016;100;45;45;60",
-        "14.11.2016;200;40;40;50",
-        "14.11.2016;300;35;35;45",
-        "22.11.2016;100;40;40;60",
-        "22.11.2016;200;40;40;50",
-        "22.11.2016;300;40;40;60"
-
-    ]
+    with open('./data/statistics.txt') as statistics_file:
+        from_file = statistics_file.readlines()
 
     #накопичувач статистик данних ринків
 
@@ -61,7 +46,7 @@ def get_statistics():
 
     return statistics_list
 
-statistic = get_statistics()
+
 
 
 def show_dovidnik(dovidnik):
@@ -76,13 +61,13 @@ def show_dovidnik(dovidnik):
             .format(c[0], c[1] ))
 
 
-def show_statistic(statistic):
+def show_statistics(statistics):
     """виводить статистичі дані про ринкові ціни на екран
 
     Args:
         statistic (list): список даних про ринкові ціни
     """
-    for c in statistic:
+    for c in statistics:
         print("дата:{:5} код ринку:{:5} ціна за картоплю:{:5} ціна за капусту:{:5} ціна за цибулю:{:5}"
             .format(c[0], c[1], c[2], c[3], c[4]))
         
