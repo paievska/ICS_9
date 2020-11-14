@@ -3,7 +3,7 @@
 
 
 def get_dovidniks():
-    """повертає список клієтів з файла 'dovidnik.txt'
+    """повертає список клієтів з файла 'dovidniks.txt'
     
     Returns:
         dovidniks_list : список ринків
@@ -58,9 +58,9 @@ def show_dovidniks(dovidniks):
         dovidnik (list): список елементів
     """
 
-    for c in dovidniks:
-        print("код ринка:{:3} назва ринку:{:3}"
-            .format(c[0], c[1]))
+    for a in dovidniks:
+        print("код ринка:{:5} назва ринку:{:5}"
+            .format(a[0], a[1]))
 
 
 def show_statistics(statistics):
