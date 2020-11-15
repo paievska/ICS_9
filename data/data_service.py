@@ -20,8 +20,8 @@ def get_dovidniks():
         line_list = line.split(';')
         dovidniks_list.append((line_list))
     
-    
     return dovidniks_list
+   
 
 
 
@@ -51,6 +51,7 @@ def get_statistics():
 
 
 
+
 def show_dovidniks(dovidniks):
     """виводить елементи довідника на екран
 
@@ -73,11 +74,11 @@ def show_statistics(statistics):
         print("дата:{:5} код ринку:{:5} ціна за картоплю:{:5} ціна за капусту:{:5} ціна за цибулю:{:5}"
             .format(c[0], c[1], c[2], c[3], c[4]))
         
-dovidniks = get_dovidniks()
-show_dovidniks(dovidniks)
 
 statistics = get_statistics()
 show_statistics(statistics)
 
 
+dovidniks = get_dovidniks()
+show_dovidniks(dovidniks)
 
