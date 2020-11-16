@@ -59,9 +59,11 @@ def show_dovidniks(dovidniks):
         dovidnik (list): список елементів
     """
 
+    
     for dovidnik in dovidniks:
-        print("код ринка:{:5} назва ринку:{:5}" 
-            .format(dovidnik[0], dovidnik[1]))
+        print("код ринку: {} назва ринку: {}" .format(dovidnik[0], dovidnik[1]))
+        
+        
 
 
 def show_statistics(statistics):
@@ -75,10 +77,10 @@ def show_statistics(statistics):
             .format(c[0], c[1], c[2], c[3], c[4]))
         
 
-statistics = get_statistics()
-show_statistics(statistics)
-
 
 dovidniks = get_dovidniks()
 show_dovidniks(dovidniks)
+
+statistics = get_statistics()
+show_statistics(statistics)
 
