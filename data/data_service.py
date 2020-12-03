@@ -10,7 +10,7 @@ def get_dovidniks():
     """
     
     with open('dovidniks.txt') as dovidniks_file:
-        from_file = dovidniks_file.readlines()
+        from_file = dovidniks_file.read().splitlines()
     
     #накопичування елеменів довідника
    
@@ -64,7 +64,7 @@ def show_dovidniks(dovidniks):
 
     
     for dovidnik in dovidniks:
-        print("код ринку: {} назва ринку: {}" .format(dovidnik[0], dovidnik[1]))
+        print("код ринку: {:5} назва ринку: {:5}" .format(dovidnik[0], dovidnik[1]))
         
         
 
