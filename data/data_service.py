@@ -44,6 +44,9 @@ def get_statistics():
 
     for line in from_file:
         line_list = line.split(';')
+        line_list[2] = int(line_list[2])
+        line_list[3] = int(line_list[3])
+        line_list[4] = int(line_list[4])
         statistics_list.append((line_list))
 
     return statistics_list
