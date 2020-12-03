@@ -1,3 +1,3 @@
-100;Besarabsky
-200;Zhytniy
+100;Besarabskyi
+200;Zhytnyi
 300;Volodymyrskyi
