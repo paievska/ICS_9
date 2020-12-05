@@ -45,6 +45,4 @@ def create_analiz():
         analiz_work['avarage amount'] = (analiz_work['price potato'] + analiz_work['price cabidge'] + analiz_work['price onion'])/3
 
         analiz_list.append(analiz_work)
-    for item in analiz_list:
-        print(item)
-create_analiz()
+  
