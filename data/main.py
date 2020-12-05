@@ -3,7 +3,7 @@
 показує на екрані первинні дані
 """
 
-#from process_data import create_analiz
+
 
 from process_data import create_analiz
 from data_service import show_dovidniks, show_statistics, get_dovidniks, get_statistics
@@ -35,10 +35,10 @@ FOOTER = \
 STOP_MESSAGE = "Нажміть будь-яку клавішу для продовження"
 
 def show_analiz(analiz_list):
-    """виводить сформовані заявки на екран у вигляді таблиці
+    """виводить сформовані аналізи на екран у вигляді таблиці
 
     Args:
-        analiz_list ([type]): список заявок
+        analiz_list ([type]): список аналізів середніх ринкових цін
     """
     
     print(f'\n\n{TITLE:^90}')
@@ -58,10 +58,10 @@ def show_analiz(analiz_list):
 
 
 def write_analiz(analiz_list):
-    """пише список заявок у файл
+    """пише список аналізів середніх ринковх цін у файл
 
     Args:
-        analiz_list ([type]): список заявок
+        analiz_list ([type]): список аналізів
     """
     
     with open('analiz.txt', "w") as analiz_file:
