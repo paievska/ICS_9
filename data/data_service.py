@@ -81,9 +81,9 @@ def show_statistics(statistics):
         
 
 
-dovidniks = get_dovidniks()
-show_dovidniks(dovidniks)
+#dovidniks = get_dovidniks()
+#show_dovidniks(dovidniks)
 
-statistics = get_statistics()
-show_statistics(statistics)
+#statistics = get_statistics()
+#show_statistics(statistics)
 
