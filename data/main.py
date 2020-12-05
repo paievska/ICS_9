@@ -10,7 +10,7 @@ from data_service import show_dovidniks, show_statistics, get_dovidniks, get_sta
 import os
 
 MAIN_MENU = \
-"""
+'''
 ~~~~~~~~~ ОБРОБКА АНАЛІЗІВ СЕРЕДНІХ РИНКОВИХ ЦІН НА ОСНОВІ ПРОДУКТІВ СПОЖИВЧОГО КОШИКА ~~~~~~~~~~
 
 1 - вивід аналізів ринків на екран
@@ -19,7 +19,7 @@ MAIN_MENU = \
 4 - вивід довідника ринків
 0 - завершити роботу
 -----------------------------
-"""
+'''
 TITLE = "АНАЛІЗ СЕРЕДНІХ РИНКОВИХ ЦІН НА ОСНОВІ ПРОДУКТІВ СПОЖИВЧОГО КОШИКА"
 HEADER = \
 '''
@@ -45,13 +45,13 @@ def show_analiz(analiz_list):
     print(HEADER)
     
     for analiz in analiz_list:
-        print(f"{analiz['code']:20}",
+        print(f"{analiz['code']:>20}",
               f"{analiz['market_name']:20}",
-              f"{analiz['data']:^15}",
+              f"{analiz['data_name']:>15}",
               f"{analiz['price_potato']:>10.2f}"
               f"{analiz['price_cabidge']:>10.2f}"
               f"{analiz['price_onion']:>10.2f}"
-              f"{analiz['avarage_amount']:>11.2f}"
+              f"{analiz['avaradge_amount']:>11.2f}"
               )
     
     print(FOOTER)
@@ -61,7 +61,7 @@ def write_analiz(analiz_list):
     """пише список заявок у файл
 
     Args:
-        zajavka_list ([type]): список заявок
+        analiz_list ([type]): список заявок
     """
     
     with open('analiz.txt', "w") as analiz_file:
@@ -69,11 +69,11 @@ def write_analiz(analiz_list):
             line = \
                 str(analiz['code']) + ';' +      \
                 analiz['market_name'] + ';' +      \
-                analiz['data']  + ';' +      \
+                analiz['data_name']  + ';' +      \
                 str(analiz['price_potato'])  + ';' +   \
                 str(analiz['price_cabidge'])  + ';' + \
                 str(analiz['price_onion'])  + ';' + \
-                str(analiz['avarage_amount']) + '\n' 
+                str(analiz['avaradge_amount']) + '\n' 
                 
             analiz_file.write(line)
         

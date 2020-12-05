@@ -12,7 +12,7 @@ analiz = {
     'avaradge_amount' : 0.0   # середня ціна
 
 }
-def create_analiz_list():
+def create_analiz():
     """формування списку аналізу даних по ринках на основі вхідних файлів
     """
     def get_dovidnik_name(dovidnik_code):
@@ -47,4 +47,4 @@ def create_analiz_list():
         analiz_list.append(analiz_work)
     for item in analiz_list:
         print(item)
-create_analiz_list()
+create_analiz()
