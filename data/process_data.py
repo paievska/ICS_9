@@ -46,3 +46,4 @@ def create_analiz():
 
         analiz_list.append(analiz_work)
     return(analiz_list)
+create_analiz()

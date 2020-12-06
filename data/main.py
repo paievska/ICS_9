@@ -53,7 +53,7 @@ def show_analiz(analiz_list):
               f"{analiz['price_onion']:>19.2f}"
               f"{analiz['avaradge_amount']:>17.2f}"
               )
-    
+
 
     print(FOOTER)
 
