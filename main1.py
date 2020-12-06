@@ -53,6 +53,7 @@ def show_zajavka(zajavka_list):
               f"{zajavka['price']:>10.2f}"
               f"{zajavka['total']:>11.2f}"
               )
+    return 
     
     print(FOOTER)
 
