@@ -39,10 +39,10 @@ def create_analiz():
         analiz_work['code'] = statistic[1]
         analiz_work['market_name'] = get_dovidnik_name(statistic[1])
         analiz_work['data_name'] = statistic[0]
-        analiz_work['price potato'] = statistic[2]
-        analiz_work['price cabidge'] = statistic[3]
-        analiz_work['price onion'] = statistic[4]
-        analiz_work['avarage amount'] = (analiz_work['price potato'] + analiz_work['price cabidge'] + analiz_work['price onion'])/3
+        analiz_work['price_potato'] = statistic[2]
+        analiz_work['price_cabidge'] = statistic[3]
+        analiz_work['price_onion'] = statistic[4]
+        analiz_work['avaradge_amount'] = (analiz_work['price_potato'] + analiz_work['price_cabidge'] + analiz_work['price_onion'])/3
 
         analiz_list.append(analiz_work)
     return(analiz_list)
