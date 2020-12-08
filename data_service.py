@@ -9,7 +9,7 @@ def get_dovidniks():
         dovidniks_list : список ринків
     """
     
-    with open('D:\\ICS_9\\data\\dovidniks.txt') as dovidniks_file:
+    with open('\\ICS_9\\data\\dovidniks.txt') as dovidniks_file:
         from_file = dovidniks_file.read().splitlines()
     
     #накопичування елеменів довідника
@@ -35,7 +35,7 @@ def get_statistics():
         statistics_list : список статистики данних ринків
     """
 
-    with open('D:\\ICS_9\\data\\statistics.txt') as statistics_file:
+    with open('\\ICS_9\\data\\statistics.txt') as statistics_file:
         from_file = statistics_file.readlines()
 
     #накопичувач статистичних даних ринків
