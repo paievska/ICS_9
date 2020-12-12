@@ -42,7 +42,7 @@ def create_analiz():
         analiz_work['price_potato'] = statistic[2]
         analiz_work['price_cabidge'] = statistic[3]
         analiz_work['price_onion'] = statistic[4]
-        analiz_work['avaradge_amount'] = (analiz_work['price_potato'] + analiz_work['price_cabidge'] + analiz_work['price_onion'])/3
+        analiz_work['avaradge_amount'] = round((analiz_work['price_potato'] + analiz_work['price_cabidge'] + analiz_work['price_onion'])/3, 2)
 
         analiz_list.append(analiz_work)
     return(analiz_list)
