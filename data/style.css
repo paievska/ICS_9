@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    background: url("../ID-100249468.jpg");
+    font-family: Tahoma;
+    line-height: 1;
+    font-size: 18px;
+}
+.card {
+    width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 10px gray;
+    
+}
+
+.card-photo {
+    display: block;  
+    width: 200px;  
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.card-title {
+    font-size: 20px;
+    text-align: center;
+    color: #5a8f63;
+}
+.card-text {
+    font-size: 14px;
+}
+.card-subtitre {
+    font-size: 16px;
+    color: #cabfbf;
+}
+.card-list {
+    padding-left: 0;
+    list-style-position: inside;
+    font-size: 14px;
+}
